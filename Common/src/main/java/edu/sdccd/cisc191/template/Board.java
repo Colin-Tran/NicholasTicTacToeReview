@@ -1,5 +1,8 @@
 package edu.sdccd.cisc191.template;
 
+import javax.swing.*;
+import java.util.ArrayList;
+
 public class Board {
     private int[][] board;
     private Player player1;
@@ -38,8 +41,7 @@ public class Board {
 
     //passes in the player making the move, the row, and the column
     //then the player id will be put where the row, column is specified.
-    public void move(Player player, int row, int column){
-        board[row][column] = player.id;
+    public void move(Player player, int row, int column) { board[row][column] = player.id;
     }
 
     //checks if there is a free spot to move
