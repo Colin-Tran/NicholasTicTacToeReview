@@ -8,13 +8,6 @@ import java.util.ArrayList;
 import java.awt.*;
 
 public class UI extends JFrame {
-    //newly added variables
-//    JLabel textfield = new JLabel();
-//    JFrame frame = new JFrame();
-//    JPanel title_panel = new JPanel();
-//    JPanel button_panel = new JPanel();
-//    JButton[] buttons = new JButton[9];
-    //devan buttons
     private ArrayList<JLabel> labels = new ArrayList<>();
     private JButton button7;
     private JButton button4;
@@ -50,25 +43,6 @@ public class UI extends JFrame {
         player1 = board.getPlayer1();
         player2 = board.getPlayer2();
         setContentPane(boardPanel);
-        // newly added stuff, testing
-//        getContentPane().setBackground(new Color(50, 50, 50));
-//        setLayout(new BorderLayout());
-//        setVisible(true);
-//        setBackground(new Color(25, 25, 25));
-//        setForeground(new Color(25, 255, 0));
-//        setFont(new Font("Ink Free", Font.BOLD, 75));
-
-
-//        textfield.setHorizontalAlignment(JLabel.CENTER);
-//        textfield.setText("Tic-Tac-Toe");
-//        textfield.setOpaque(true);
-//        title_panel.setLayout(new BorderLayout());
-//        title_panel.setBounds(0, 0, 800, 100);
-//
-//        button_panel.setLayout(new GridLayout(3, 3));
-//        button_panel.setBackground(new Color(150, 150, 150));
-
-           // buttons[i].setFont(new Font("MV Boli", Font.BOLD, 120)); THIS IS THE NEW FONT
         setTitle("Board");
         setSize(500, 300);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -173,7 +147,6 @@ public class UI extends JFrame {
                         }
                     }
                     board.nextPlayer();
-//                    button1.setEnabled(false);
                     labels.get(2).setText("Turn: " + board.playerMove);
                 }
             });
@@ -269,7 +242,6 @@ public class UI extends JFrame {
                         }
                     }
                     board.nextPlayer();
-//                    button2.setEnabled(false);
                     labels.get(2).setText("Turn: " + board.playerMove);
                 }
             });
@@ -364,7 +336,6 @@ public class UI extends JFrame {
                         }
                     }
                     board.nextPlayer();
-//                    button3.setEnabled(false);
                     labels.get(2).setText("Turn: " + board.playerMove);
                 }
             });
@@ -457,7 +428,6 @@ public class UI extends JFrame {
                         }
                     }
                     board.nextPlayer();
-//                    button4.setEnabled(false);
 
                 }
             });
@@ -645,7 +615,6 @@ public class UI extends JFrame {
                         }
                     }
                     board.nextPlayer();
-//                    button6.setEnabled(false);
                     labels.get(2).setText("Turn: " + board.playerMove);
                 }
             });
@@ -739,7 +708,6 @@ public class UI extends JFrame {
                         }
                     }
                     board.nextPlayer();
-//                    button7.setEnabled(false);
                     labels.get(2).setText("Turn: " + board.playerMove);
                 }
             });
@@ -833,7 +801,6 @@ public class UI extends JFrame {
                         }
                     }
                     board.nextPlayer();
-//                    button8.setEnabled(false);
                     labels.get(2).setText("Turn: " + board.playerMove);
                 }
             });
@@ -925,7 +892,6 @@ public class UI extends JFrame {
                         }
                     }
                     board.nextPlayer();
-//                    button9.setEnabled(false);
                     labels.get(2).setText("Turn: " + board.playerMove);
                 }
             });
@@ -962,7 +928,6 @@ public class UI extends JFrame {
                     button9.setText("");
                     button9.setBackground(new Color(223, 234, 244));
                 }
-
             });
         }
     }
