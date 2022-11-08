@@ -41,9 +41,13 @@ public class Board {
 
     //passes in the player making the move, the row, and the column
     //then the player id will be put where the row, column is specified.
-    public void move(Player player, int row, int column) { board[row][column] = player.id;
+    public void move(Player player, int row, int column) {
+        board[row][column] = player.id;
     }
 
+    public int getIDFromMove(int row, int col){
+        return board[row][col];
+    }
     //checks if there is a free spot to move
     //if it is not an empty spot to move, it will
     //return false. If it is empty, it will return true

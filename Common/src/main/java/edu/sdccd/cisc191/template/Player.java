@@ -25,6 +25,7 @@ public class Player implements Person{
         return username;
     }
 
+    public int getID(){ return id;}
     @Override
     public String toString(){
         return username;
